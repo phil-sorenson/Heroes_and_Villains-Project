@@ -9,8 +9,8 @@ Property names must be in snake_case and match the following exactly!
 
 (/5 points) As a developer, I want to register the SuperType model with the admin site so I can:
 ✅1. Register a new super user (python manage.py createsuperuser)
-2. Visit the admin site
-3. Seed two values (“Hero” and “Villain”) into the “super_type” table
+✅2. Visit the admin site
+✅3. Seed two values (“Hero” and “Villain”) into the “super_type” table
 
 ✅(/2.5 points) As a developer, I want to create a Super model in a “supers” app.
 Property names must be in snake_case and match the following exactly!
