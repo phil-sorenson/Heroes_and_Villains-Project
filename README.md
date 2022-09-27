@@ -1,9 +1,9 @@
 # Heroes_and_Villians-Project
 Week 9: Intermediate Django REST Framework
 
-(/5 points): As a developer, I want to make good, consistent commits.
+✅(/5 points): As a developer, I want to make good, consistent commits.
 
-(/2.5 points) As a developer, I want to create a SuperType model in a “super_types” app.
+✅(/2.5 points) As a developer, I want to create a SuperType model in a “super_types” app.
 Property names must be in snake_case and match the following exactly!
 • type – CharField
 
