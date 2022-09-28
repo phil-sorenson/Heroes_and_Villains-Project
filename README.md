@@ -21,7 +21,7 @@ Property names must be in snake_case and match the following exactly!
 • catchphrase – CharField
 • super_type – ForeignKey
 
-(/2.5 points) As a developer, I want my API to serve the “supers” app’s content on the following
+✅(/2.5 points) As a developer, I want my API to serve the “supers” app’s content on the following
 urls paths:
 Paths must match these exactly!
 • ‘127.0.0.1:8000/api/supers/' - optional params
@@ -53,15 +53,17 @@ sent in the request’s body.
 
 (/10 points) As a developer, I want to create a GET endpoint the responds with a 200 success
 status code and all of the supers within the supers table.
-• This view function should be implemented in a way to accept a “type” parameter
+✅• This view function should be implemented in a way to accept a “type” parameter
 o Example: " http://127.0.0.1:8000/api/supers?type=hero”
-• If a type query parameter is sent to the view function with the value of “hero”, the
+✅• If a type query parameter is sent to the view function with the value of “hero”, the
 view function response should be a list of all supers that are associated with the type
 of “Hero” (Shown in End Result Overview video on portal)
-• If a type query parameter is sent to the view function with the value of “villain”, the
+✅• If a type query parameter is sent to the view function with the value of “villain”, the
 view function response should be a list of all supers that are associated with the type
 of “Villain” (Shown in End Result Overview video on portal)
-• If no type query parameter is sent, return a custom dictionary response
+
+# By 'no type' query set, you mean 'api/supers?type=' ??
+❓• If no type query parameter is sent, return a custom dictionary response
 with a “heroes” key set equal to a list of supers of type “Hero” and a “villains” key
 set equal to a list of supers of type “Villain” (Shown in End Result Overview video on
 portal)
