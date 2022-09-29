@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import serializers
 
-import super_types
+from super_types.models import SuperType
 from .models import Super
 from .serializers import SuperSerializer
 from rest_framework import status
@@ -20,16 +20,20 @@ def supers_list(request):
             queryset = queryset.filter(super_type__type = super_type)
         serializer = SuperSerializer(queryset, many=True)
         return Response(serializer.data)
-    
+
     elif request.method == 'POST':
-        # Need to create super_type auto generating the super_type_id when creating a new object
         serializer = SuperSerializer(data = request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
     return Response(serializer.data, status=status.HTTP_201_CREATED) 
 
+@api_view(['GET'])
+def custom_response(request):
+    supers = Super.objects.all()
+    super_types = SuperType.objects.all()
 
-
+    super_serializer = SuperSerializer(supers, many=True)
+    super_type_serializer = Super
 
 
 @api_view(['GET', 'POST', 'DELETE'])

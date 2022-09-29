@@ -28,15 +28,15 @@ Paths must match these exactly!
 • ‘127.0.0.1:8000/api/supers/<int:pk>/’
 
 (/5 points) As a developer, I want to create a GET by id endpoint that does the following things:
-• Accepts a value from the request’s URL (The id of the super to retrieve).
-• Returns a 200 status code.
-• Responds with the super in the database that has the id that was sent through the URL.
+✅• Accepts a value from the request’s URL (The id of the super to retrieve).
+✅• Returns a 200 status code.
+✅• Responds with the super in the database that has the id that was sent through the URL.
 
 (/5 points) As a developer, I want to create a POST endpoint that does the following things:
 Accepts a body object from the request in the form of a Super model.
-• Adds the new super to the database.
-• Returns a 201 status code.
-• Responds with the newly created super object.
+✅• Adds the new super to the database.
+✅• Returns a 201 status code.
+✅• Responds with the newly created super object.
 
 (/5 points) As a developer, I want to create a PUT endpoint that does the following things:
 Accepts a value from the request’s URL (The id of the super to be updated).
